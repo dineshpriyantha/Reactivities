@@ -12,6 +12,7 @@ namespace Persistence
         }
 
         public DbSet<Value> Values {get; set;}
+        public DbSet<test> Activities {get; set;}
 
         // add hard code value to insert to values in to the db table during migration
         protected override void OnModelCreating(ModelBuilder builder)
