@@ -20,15 +20,15 @@ class App extends Component {
 
   componentDidMount(){
     axios.get('http://localhost:5000/api/values')
-    .then((response) => {
+    .then(response => {
       // console.log(response);
       this.setState({
         values: response.data
-      })
-    })
+      });
+    });
     
     // this.setState({
-    //   values: [{id: 1, name: 'Value 101'}, {id:2, name: 'Value 102'}]
+    //   values: [{id: 1, name: 'Value 101'}, {id:2, name: 'Value 10222'}]
     // })
 
   }
@@ -41,7 +41,7 @@ class App extends Component {
         <Icon name='users' />
         <Header.Content>
           Reactivities
-          <Header.Subheader>Manage your preferences</Header.Subheader>
+          <Header.Subheader>Manage your preferences ddd</Header.Subheader>
         </Header.Content>
       </Header>
 
