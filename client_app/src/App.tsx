@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 //import { cars } from './demo';
 //import CarItem from './CarItem';
 import axios from 'axios';
-import { Header, Icon, List } from 'semantic-ui-react';
+import { Header, Icon, List, Button, Checkbox, Form} from 'semantic-ui-react';
 
 // function App() {
 // }
@@ -51,6 +51,22 @@ class App extends Component {
         <List.Item key={value.id}>{value.name}</List.Item>
             ))} 
       </List>
+
+      <Form>
+        <Form.Field>
+          <label>First Name</label>
+          <input placeholder='First Name' />
+        </Form.Field>
+        <Form.Field>
+          <label>Last Name</label>
+          <input placeholder='Last Name' />
+        </Form.Field>
+        <Form.Field>
+          <Checkbox label='I agree to the Terms and Conditions' />
+        </Form.Field>
+        <Button type='submit'>Submit</Button>
+      </Form>
+      
         {/* <ul>
           {cars.map((car) => {
             //  <li>{car.color}</li> use CarIte Component instead of this

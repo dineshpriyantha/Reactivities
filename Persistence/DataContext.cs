@@ -1,7 +1,5 @@
-﻿using System;
-using Domain;
+﻿using Domain;
 using Microsoft.EntityFrameworkCore;
-using System.Linq;
 
 namespace Persistence
 {
@@ -13,7 +11,7 @@ namespace Persistence
         }
 
         public DbSet<Value> Values {get; set;}
-        public DbSet<ActivityD> Activities {get; set;}
+        public DbSet<Activity> Activities {get; set;}
 
         // add hard code value to insert to values in to the db table during migration
         protected override void OnModelCreating(ModelBuilder builder)
