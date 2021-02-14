@@ -8,7 +8,6 @@ export interface ICar {
     topSpeed? : number; // ? used to set 'topSpeed' in optionl situation
 }
 
-
 const car1 : ICar = {
     color: 'red',
     model: 'BMW'
